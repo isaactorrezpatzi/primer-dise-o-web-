@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.volver {
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor-ejercicios {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ejercicio {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.ejercicio:hover {
+    transform: translateY(-5px);
+}
+
+.resultado {
+    margin-top: 10px;
+    display: none;
+    padding: 10px;
+    background: #dde6ff;
+    border-radius: 8px;
+}
