@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3er Bimestre</title>
+<link rel="stylesheet" href="ejer3.css">
+</head>
+<body>
+
+<header>
+<div class="contenedor-header">
+<h1>3er Bimestre</h1>
+<a href="../index.html" class="volver">← Volver</a>
+</div>
+</header>
+
+<section class="contenedor-ejercicios">
+
+<div class="ejercicio animar">
+<h2>Ejercicio 1: Validación simple</h2>
+<input id="nombre" placeholder="Escribe tu nombre">
+<button onclick="saludar()">Saludar</button>
+<p id="saludo"></p>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 2: Mostrar/ocultar</h2>
+<button onclick="mostrar('b3e2')">Mostrar</button>
+<div id="b3e2" class="resultado">Contenido oculto</div>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 3: Cambiar texto</h2>
+<p id="texto">Texto original</p>
+<button onclick="document.getElementById('texto').innerText='Texto cambiado'">
+Cambiar
+</button>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 4: Color aleatorio</h2>
+<button onclick="colorRandom()">Cambiar color</button>
+</div>
+
+</section>
+
+<script src="ejer3.js"></script>
+<script>
+function saludar(){
+let n = document.getElementById("nombre").value;
+document.getElementById("saludo").innerText = "Hola " + n;
+}
+function colorRandom(){
+document.body.style.background =
+"#" + Math.floor(Math.random()*16777215).toString(16);
+}
+</script>
+
+</body>
+</html>
