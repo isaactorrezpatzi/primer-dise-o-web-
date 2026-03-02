@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4to Bimestre</title>
+<link rel="stylesheet" href="../css/ejer4.css">
+</head>
+<body>
+
+<header>
+<div class="contenedor-header">
+<h1>4to Bimestre</h1>
+<a href="../index.html" class="volver">← Volver</a>
+</div>
+</header>
+
+<section class="contenedor-ejercicios">
+
+<div class="ejercicio animar">
+<h2>Ejercicio 1: Hora actual</h2>
+<button onclick="hora()">Ver hora</button>
+<p id="hora"></p>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 2: Confirmación</h2>
+<button onclick="confirm('¿Deseas continuar?')">
+Confirmar
+</button>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 3: Cambio de imagen</h2>
+<img id="img" src="../img/perfil.jpg" width="100">
+<button onclick="document.getElementById('img').src='../img/logo.png'">
+Cambiar imagen
+</button>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 4: Reiniciar página</h2>
+<button onclick="location.reload()">Reiniciar</button>
+</div>
+
+</section>
+
+<script src="../java/ejer4.js"></script>
+<script>
+function hora(){
+document.getElementById("hora").innerText = new Date().toLocaleTimeString();
+}
+</script>
+
+</body>
+</html>

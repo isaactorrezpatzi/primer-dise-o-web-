@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eafaf1;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.volver {
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor-ejercicios {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.ejercicio {
+    background: white;
+    padding: 20px;
+    border-left: 6px solid #1b5e20;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.ejercicio:hover {
+    transform: scale(1.03);
+}
+
+button {
+    background: #1b5e20;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.resultado {
+    display: none;
+    margin-top: 10px;
+}

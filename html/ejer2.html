@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2do Bimestre</title>
+<link rel="stylesheet" href="../css/ejer2.css">
+</head>
+<body>
+
+<header>
+<div class="contenedor-header">
+<h1>2do Bimestre</h1>
+<a href="../index.html" class="volver">← Volver</a>
+</div>
+</header>
+
+<section class="contenedor-ejercicios">
+
+<div class="ejercicio animar">
+<h2>Ejercicio 1: Contador</h2>
+<button onclick="contador()">Sumar</button>
+<p id="cont">0</p>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 2: Mostrar texto</h2>
+<button onclick="mostrar('b2e2')">Mostrar</button>
+<div id="b2e2" class="resultado">Texto visible</div>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 3: Fecha actual</h2>
+<button onclick="fecha()">Ver fecha</button>
+<p id="fecha"></p>
+</div>
+
+<div class="ejercicio animar">
+<h2>Ejercicio 4: Cambio de tamaño</h2>
+<button onclick="document.body.style.fontSize='20px'">
+Aumentar texto
+</button>
+</div>
+
+</section>
+
+<script src="../java/ejer2.js"></script>
+<script>
+let c = 0;
+function contador(){
+    c++;
+    document.getElementById("cont").innerText = c;
+}
+function fecha(){
+    document.getElementById("fecha").innerText = new Date();
+}
+</script>
+
+</body>
+</html>
